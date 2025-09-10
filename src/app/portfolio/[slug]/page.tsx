@@ -7,9 +7,9 @@ import { PortfolioDetailClient } from "@/components/portfolio-detail-client";
 import type { Metadata } from "next";
 
 interface PortfolioDetailPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export async function generateStaticParams() {

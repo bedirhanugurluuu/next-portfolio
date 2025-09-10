@@ -98,15 +98,7 @@ export const HeroHeader = () => {
                   onClick={() => setLanguage(language === "tr" ? "en" : "tr")}
                   size="sm"
                   variant="outline"
-                  className={cn(isScrolled && "lg:hidden")}
-                >
-                  <span>{language === "tr" ? "EN" : "TR"}</span>
-                </Button>
-                <Button
-                  onClick={() => setLanguage(language === "tr" ? "en" : "tr")}
-                  size="sm"
-                  variant="outline"
-                  className={cn(isScrolled ? "lg:inline-flex" : "hidden")}
+                  className="w-full sm:w-auto"
                 >
                   <span>{language === "tr" ? "EN" : "TR"}</span>
                 </Button>

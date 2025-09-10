@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { ScrollView } from "./scroll-view";
 
@@ -81,7 +82,7 @@ export default function TeamSection() {
                       },
                     }}
                   >
-                    <img
+                    <Image
                       className="h-96 w-full rounded-md object-cover object-top grayscale transition-all duration-500 hover:grayscale-0 group-hover:h-[22.5rem] group-hover:rounded-xl"
                       src={member.avatar}
                       alt="team member"
