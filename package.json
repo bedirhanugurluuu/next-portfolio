@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/bedirhanugurluuu/next-portfolio-Bedirhan"
   },
-  "homepage": "https://bedirhanugurlu.dev",
+  "homepage": "https://bedirhanugurlu.com",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

@@ -69,7 +69,10 @@ export default function HeroSection() {
                   autoPlay
                   loop
                   muted
-                  preload="auto"
+                  playsInline
+                  preload="metadata"
+                  controls={false}
+                  disablePictureInPicture
                   className="size-full -scale-x-100 object-cover opacity-50 invert-0 dark:opacity-35 dark:invert "
                 >
                   <source src="/hero-light.mp4" type="video/mp4" />

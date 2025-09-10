@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { PORTFOLIO_CONTENT } from '@/content/portfolio'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bedirhanugurlu.dev'
+  const baseUrl = 'https://bedirhanugurlu.com'
   
   // Ana sayfalar
   const staticPages = [

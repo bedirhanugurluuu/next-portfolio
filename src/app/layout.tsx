@@ -12,10 +12,12 @@ const inter = Inter({
   display: "swap",
   variable: "--font-inter",
   preload: true,
+  fallback: ["system-ui", "arial", "sans-serif"],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bedirhanugurlu.dev'),
+  metadataBase: new URL('https://bedirhanugurlu.com'),
   title: {
     default: "Bedirhan Uğurlu - Frontend Developer",
     template: "%s | Bedirhan Uğurlu"
@@ -35,7 +37,7 @@ export const metadata: Metadata = {
     "İstanbul Developer",
     "Turkish Developer"
   ],
-  authors: [{ name: "Bedirhan Uğurlu", url: "https://bedirhanugurlu.dev" }],
+  authors: [{ name: "Bedirhan Uğurlu", url: "https://bedirhanugurlu.com" }],
   creator: "Bedirhan Uğurlu",
   publisher: "Bedirhan Uğurlu",
   formatDetection: {
@@ -58,13 +60,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     alternateLocale: ["en_US"],
-    url: "https://bedirhanugurlu.dev",
+    url: "https://bedirhanugurlu.com",
     siteName: "Bedirhan Uğurlu - Portfolio",
     title: "Bedirhan Uğurlu - Frontend Developer",
     description: "Frontend Developer specializing in Next.js, React, TypeScript. Creating modern, performant web applications.",
     images: [
       {
-        url: "https://bedirhanugurlu.dev/images/about.jpg",
+        url: "https://bedirhanugurlu.com/images/about.jpg",
         width: 1200,
         height: 630,
         alt: "Bedirhan Uğurlu - Frontend Developer",
@@ -75,14 +77,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bedirhan Uğurlu - Frontend Developer",
     description: "Frontend Developer specializing in Next.js, React, TypeScript.",
-    images: ["https://bedirhanugurlu.dev/images/about.jpg"],
+    images: ["https://bedirhanugurlu.com/images/about.jpg"],
     creator: "@bedirhanugurlu",
   },
   alternates: {
-    canonical: "https://bedirhanugurlu.dev",
+    canonical: "https://bedirhanugurlu.com",
     languages: {
-      "tr": "https://bedirhanugurlu.dev",
-      "en": "https://bedirhanugurlu.dev/en",
+      "tr": "https://bedirhanugurlu.com",
+      "en": "https://bedirhanugurlu.com/en",
     },
   },
   verification: {
@@ -100,12 +102,50 @@ export default function RootLayout({
     <html lang="tr" suppressHydrationWarning>
       <head>
         <StructuredData />
-        <link rel="canonical" href="https://bedirhanugurlu.dev" />
+        <link rel="canonical" href="https://bedirhanugurlu.com" />
+        
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
+        
+        {/* Performance Optimizations */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        
+        {/* Resource Hints */}
+        <link rel="preload" href="/hero-light.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/images/about.jpg" as="image" />
+        <link rel="preload" href="/images/about-1.jpg" as="image" />
+        
+        {/* PWA and Mobile */}
         <meta name="theme-color" content="#000000" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Bedirhan Uğurlu" />
         <link rel="apple-touch-icon" href="/icon-192.png" />
+        
+        {/* Critical CSS Inline */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            /* Critical CSS for above-the-fold content */
+            body { margin: 0; font-family: var(--font-inter), system-ui, sans-serif; }
+            .min-h-screen { min-height: 100vh; }
+            .overflow-hidden { overflow: hidden; }
+            .relative { position: relative; }
+            .absolute { position: absolute; }
+            .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+            .z-10 { z-index: 10; }
+            .z-20 { z-index: 20; }
+            .bg-black { background-color: #000; }
+            .text-white { color: #fff; }
+            .opacity-50 { opacity: 0.5; }
+            .object-cover { object-fit: cover; }
+            .size-full { width: 100%; height: 100%; }
+          `
+        }} />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased`}

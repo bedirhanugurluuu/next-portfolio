@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: PortfolioDetailPageProps): Pr
       images: [project.img],
     },
     alternates: {
-      canonical: `https://bedirhanugurlu.dev${project.url}`,
+      canonical: `https://bedirhanugurlu.com${project.url}`,
     },
   };
 }

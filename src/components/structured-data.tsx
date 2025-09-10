@@ -5,8 +5,8 @@ export function StructuredData() {
     "name": "Bedirhan Uğurlu",
     "jobTitle": "Frontend Developer",
     "description": "Modern web teknolojileri ile kullanıcı dostu ve etkileyici dijital deneyimler yaratıyorum.",
-    "url": "https://bedirhanugurlu.dev",
-    "image": "https://bedirhanugurlu.dev/images/about.jpg",
+    "url": "https://bedirhanugurlu.com",
+    "image": "https://bedirhanugurlu.com/images/about.jpg",
     "email": "bedirhanugurlu3661@gmail.com",
     "address": {
       "@type": "PostalAddress",
@@ -41,7 +41,7 @@ export function StructuredData() {
     "@type": "WebSite",
     "name": "Bedirhan Uğurlu - Portfolio",
     "description": "Frontend Developer Bedirhan Uğurlu'nun portfolio websitesi",
-    "url": "https://bedirhanugurlu.dev",
+    "url": "https://bedirhanugurlu.com",
     "author": {
       "@type": "Person",
       "name": "Bedirhan Uğurlu"
@@ -58,8 +58,8 @@ export function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Bedirhan Uğurlu",
-    "url": "https://bedirhanugurlu.dev",
-    "logo": "https://bedirhanugurlu.dev/logo.png",
+    "url": "https://bedirhanugurlu.com",
+    "logo": "https://bedirhanugurlu.com/logo.jpg",
     "description": "Frontend Development Services",
     "founder": {
       "@type": "Person",

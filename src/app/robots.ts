@@ -14,7 +14,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/admin/', '/private/'],
       },
     ],
-    sitemap: 'https://bedirhanugurlu.dev/sitemap.xml',
-    host: 'https://bedirhanugurlu.dev',
+    sitemap: 'https://bedirhanugurlu.com/sitemap.xml',
+    host: 'https://bedirhanugurlu.com',
   }
 }
