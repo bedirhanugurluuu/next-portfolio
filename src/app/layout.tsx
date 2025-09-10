@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     description: "Frontend Developer specializing in Next.js, React, TypeScript. Creating modern, performant web applications.",
     images: [
       {
-        url: "https://bedirhanugurlu.com/images/about.jpg",
+        url: "https://bedirhanugurlu.com/logo.jpg",
         width: 1200,
         height: 630,
         alt: "Bedirhan Uğurlu - Frontend Developer",
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bedirhan Uğurlu - Frontend Developer",
     description: "Frontend Developer specializing in Next.js, React, TypeScript.",
-    images: ["https://bedirhanugurlu.com/images/about.jpg"],
+    images: ["https://bedirhanugurlu.com/logo.jpg"],
     creator: "@bedirhanugurlu",
   },
   alternates: {
@@ -117,8 +117,6 @@ export default function RootLayout({
         
         {/* Resource Hints */}
         <link rel="preload" href="/hero-light.mp4" as="video" type="video/mp4" />
-        <link rel="preload" href="/images/about.jpg" as="image" />
-        <link rel="preload" href="/images/about-1.jpg" as="image" />
         
         {/* PWA and Mobile */}
         <meta name="theme-color" content="#000000" />

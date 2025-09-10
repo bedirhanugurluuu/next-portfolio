@@ -6,7 +6,7 @@ export function StructuredData() {
     "jobTitle": "Frontend Developer",
     "description": "Modern web teknolojileri ile kullanıcı dostu ve etkileyici dijital deneyimler yaratıyorum.",
     "url": "https://bedirhanugurlu.com",
-    "image": "https://bedirhanugurlu.com/images/about.jpg",
+    "image": "https://bedirhanugurlu.com/logo.jpg",
     "email": "bedirhanugurlu3661@gmail.com",
     "address": {
       "@type": "PostalAddress",
