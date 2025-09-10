@@ -106,7 +106,6 @@ export default function RootLayout({
         
         {/* Favicon */}
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/icon-192.png" />
         
         {/* Performance Optimizations */}
@@ -116,10 +115,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         
         {/* Resource Hints */}
-        <link rel="preload" href="/hero-light.mp4" as="video" type="video/mp4" />
+        <link rel="preload" href="/hero-light.mp4" as="video" type="video/mp4" media="(min-width: 768px)" />
         
         {/* PWA and Mobile */}
         <meta name="theme-color" content="#000000" />
+        <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Bedirhan Uğurlu" />

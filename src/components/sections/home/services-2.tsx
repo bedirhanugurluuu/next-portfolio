@@ -101,7 +101,7 @@ export default function ServicesSection2() {
                         }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       >
-                        <Link href={service.url}>
+                        <Link href={service.url} target="_blank" rel="noopener noreferrer">
                           <Image
                             src={service.img}
                             alt={service.name}
