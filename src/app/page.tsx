@@ -1,5 +1,4 @@
 import AboutUsSection from "@/components/sections/home/about-section";
-import FullVersionSection from "@/components/sections/home/full-version-section";
 import HeroSection from "@/components/sections/home/hero-section";
 import PortfolioSection from "@/components/sections/home/portfolio-section";
 import ServicesSection from "@/components/sections/home/services";
