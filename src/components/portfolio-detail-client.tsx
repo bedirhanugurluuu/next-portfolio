@@ -72,7 +72,7 @@ export function PortfolioDetailClient({ project }: PortfolioDetailClientProps) {
   }, [selectedImage, currentImageIndex, project.gallery, nextImage, prevImage]);
 
   return (
-    <div className="min-h-screen pt-16" style={{ background: '#0a0a0a' }}>
+    <div className="min-h-screen pt-16 bg-background text-foreground">
       <div className="mx-auto max-w-6xl px-6 py-16">
 
         {/* Project Header */}
@@ -264,8 +264,7 @@ export function PortfolioDetailClient({ project }: PortfolioDetailClientProps) {
       {/* Lightbox Modal */}
       {selectedImage && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
-          style={{ background: '#000000cc' }}
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 dark:bg-black/90"
           onClick={closeLightbox}
         >
           <div className="relative max-w-7xl max-h-full">
