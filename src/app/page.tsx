@@ -9,9 +9,9 @@ import { Metadata } from "next";
 
 // SSG için metadata
 export const metadata: Metadata = {
-  title: "Bedirhan Uğurlu - Full Stack Developer | Portfolio",
-  description: "Full Stack Developer specializing in Next.js, React, PHP, and WordPress. View my portfolio of modern web applications and projects.",
-  keywords: ["Full Stack Developer", "Next.js", "React", "PHP", "WordPress", "Portfolio", "Web Development"],
+  title: "Bedirhan Uğurlu - Front End Developer | Portfolio",
+  description: "Front End Developer specializing in Next.js, React, PHP, and WordPress. View my portfolio of modern web applications and projects.",
+  keywords: ["Front End Developer", "Next.js", "React", "PHP", "WordPress", "Portfolio", "Web Development"],
   authors: [{ name: "Bedirhan Uğurlu" }],
   creator: "Bedirhan Uğurlu",
   publisher: "Bedirhan Uğurlu",
@@ -30,22 +30,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     url: "https://bedirhanugurlu.com",
-    title: "Bedirhan Uğurlu - Full Stack Developer",
-    description: "Full Stack Developer specializing in Next.js, React, PHP, and WordPress. View my portfolio of modern web applications and projects.",
+    title: "Bedirhan Uğurlu - Front End Developer",
+    description: "Front End Developer specializing in Next.js, React, PHP, and WordPress. View my portfolio of modern web applications and projects.",
     siteName: "Bedirhan Uğurlu Portfolio",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Bedirhan Uğurlu - Full Stack Developer",
+        alt: "Bedirhan Uğurlu - Front End Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bedirhan Uğurlu - Full Stack Developer",
-    description: "Full Stack Developer specializing in Next.js, React, PHP, and WordPress.",
+    title: "Bedirhan Uğurlu - Front End Developer",
+    description: "Front End Developer specializing in Next.js, React, PHP, and WordPress.",
     images: ["/images/og-image.jpg"],
   },
   alternates: {
