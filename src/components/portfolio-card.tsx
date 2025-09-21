@@ -10,12 +10,15 @@ export default function PortfolioCard({
 }: {
   card: {
     id: string;
+    name: string;
     nameKey: string;
+    description: string;
     descriptionKey: string;
     img: string;
     url: string;
     technologies: string[];
     features: string[];
+    featuresKeys?: string[];
   };
 }) {
   const { t } = useLanguage();

@@ -1,7 +1,9 @@
 export const PORTFOLIO_CONTENT = [
   {
     id: "portfolio-nextjs",
+    name: "Next.js Portfolio",
     nameKey: "portfolio.projects.nextjs.name",
+    description: "Modern portfolio website built with Next.js and TypeScript",
     descriptionKey: "portfolio.projects.nextjs.description",
     img: "/images/portfolio/Luca.png",
     url: "/portfolio/portfolio-nextjs",
@@ -16,6 +18,16 @@ export const PORTFOLIO_CONTENT = [
       "API Routes"
     ],
     features: [
+      "Admin Panel",
+      "Static Site Generation", 
+      "SEO Optimization",
+      "Supabase Integration",
+      "Vercel Deployment",
+      "Responsive Design",
+      "Dynamic Sitemap",
+      "Canonical URLs"
+    ],
+    featuresKeys: [
       "portfolio.nextjs.features.admin",
       "portfolio.nextjs.features.ssg", 
       "portfolio.nextjs.features.seo",
@@ -38,7 +50,9 @@ export const PORTFOLIO_CONTENT = [
   },
   {
     id: "kardes-yapi",
+    name: "Kardeş Yapı",
     nameKey: "portfolio.projects.kardes.name",
+    description: "Construction company website with PHP admin panel",
     descriptionKey: "portfolio.projects.kardes.description",
     img: "/images/portfolio/kardesyapi.png",
     url: "/portfolio/kardes-yapi",
@@ -53,6 +67,16 @@ export const PORTFOLIO_CONTENT = [
       "Admin Panel"
     ],
     features: [
+      "Admin Panel",
+      "Project Management",
+      "Services Showcase",
+      "Contact Forms",
+      "Responsive Design",
+      "SEO Optimization",
+      "Security Features",
+      "Image Gallery"
+    ],
+    featuresKeys: [
       "portfolio.kardes.features.admin",
       "portfolio.kardes.features.projects",
       "portfolio.kardes.features.services",
@@ -76,7 +100,9 @@ export const PORTFOLIO_CONTENT = [
   },
   {
     id: "umut-endustriyel",
+    name: "Umut Endüstriyel",
     nameKey: "portfolio.projects.umut.name",
+    description: "Industrial company WordPress website",
     descriptionKey: "portfolio.projects.umut.description",
     img: "/images/portfolio/umut.png",
     url: "/portfolio/umut-endustriyel",
@@ -91,6 +117,16 @@ export const PORTFOLIO_CONTENT = [
       "Plugins"
     ],
     features: [
+      "WordPress CMS",
+      "Custom Theme",
+      "Product Catalog",
+      "Services Page",
+      "References Section",
+      "Contact Forms",
+      "Responsive Design",
+      "SEO Optimization"
+    ],
+    featuresKeys: [
       "portfolio.umut.features.wordpress",
       "portfolio.umut.features.custom",
       "portfolio.umut.features.catalog",
@@ -110,7 +146,9 @@ export const PORTFOLIO_CONTENT = [
   },
   {
     id: "cinar-et-pide",
+    name: "Çınar Et Pide",
     nameKey: "portfolio.projects.cinar.name",
+    description: "Restaurant WordPress website with custom theme",
     descriptionKey: "portfolio.projects.cinar.description",
     img: "/images/portfolio/cinar.png",
     url: "/portfolio/cinar-et-pide",
@@ -125,6 +163,16 @@ export const PORTFOLIO_CONTENT = [
       "Plugins"
     ],
     features: [
+      "WordPress CMS",
+      "Custom Theme",
+      "Menu Display",
+      "Photo Gallery",
+      "About Section",
+      "Contact Forms",
+      "Responsive Design",
+      "SEO Optimization"
+    ],
+    featuresKeys: [
       "portfolio.cinar.features.wordpress",
       "portfolio.cinar.features.custom",
       "portfolio.cinar.features.menu",

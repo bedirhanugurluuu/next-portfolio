@@ -30,24 +30,24 @@ export async function generateMetadata({ params }: PortfolioDetailPageProps): Pr
   }
 
   return {
-    title: project.nameKey,
-    description: project.descriptionKey,
+    title: project.name,
+    description: project.description,
     openGraph: {
-      title: project.nameKey,
-      description: project.descriptionKey,
+      title: project.name,
+      description: project.description,
       images: [
         {
           url: project.img,
           width: 1200,
           height: 630,
-          alt: project.nameKey,
+          alt: project.name,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: project.nameKey,
-      description: project.descriptionKey,
+      title: project.name,
+      description: project.description,
       images: [project.img],
     },
     alternates: {

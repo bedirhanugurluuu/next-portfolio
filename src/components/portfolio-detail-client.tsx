@@ -10,12 +10,15 @@ import FooterSection from "./footer";
 interface PortfolioDetailClientProps {
   project: {
     id: string;
+    name: string;
     nameKey: string;
+    description: string;
     descriptionKey: string;
     img: string;
     url: string;
     technologies: string[];
     features: string[];
+    featuresKeys?: string[];
     gallery?: string[];
     liveUrl?: string;
     githubUrl?: string;
@@ -184,7 +187,7 @@ export function PortfolioDetailClient({ project }: PortfolioDetailClientProps) {
               {project.features.map((feature, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-600 dark:text-gray-300">{t(feature)}</span>
+                  <span className="text-gray-600 dark:text-gray-300">{feature}</span>
                 </li>
               ))}
             </ul>
